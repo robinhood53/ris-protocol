@@ -12,9 +12,9 @@ class MelbourneRefractoryProtocol:
     """
     Automates high-precision data acquisition and analysis run targeting the Solar Midnight Quiet Space.
     """
-    def __init__(self, target_date="2026-04-27"):
+    def __init__(self, target_date=None):
         self.location = EarthLocation(lat=-37.8136*u.deg, lon=144.9631*u.deg)
-        self.target_date = target_date
+        self.target_date = target_date or datetime.datetime.now().strftime("%Y-%m-%d")
         self.target_name = "TOI-178"
         self.target_coords = SkyCoord("00h29m12s", "-30d27m13s", frame='icrs')
         self.gear_ratio = [18, 9, 6, 4, 3] # Mayan Gearbox for TOI-178
