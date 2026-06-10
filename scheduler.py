@@ -2,6 +2,8 @@ from astropy.coordinates import EarthLocation, AltAz, get_sun
 from astropy.time import Time
 import astropy.units as u
 import datetime
+import numpy as np
+
 
 class SolarMidnightScheduler:
     """
@@ -33,6 +35,5 @@ class SolarMidnightScheduler:
         return next_midnight
 
 if __name__ == "__main__":
-    import numpy as np # Needed for linspace
     scheduler = SolarMidnightScheduler()
     scheduler.schedule_listen()
