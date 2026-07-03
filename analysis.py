@@ -40,13 +40,20 @@ class MHSFilter:
         
         # Identify residual fluctuations with non-random Phase-Amplitude Coupling (PAC)
         # Using Hilbert transform to get phase and amplitude
-        analytic_signal = hilbert(ordered_signal)
-        amplitude_envelope = np.abs(analytic_signal)
-        phase = np.angle(analytic_signal)
-        
-        # For simplicity, we flag if there's a correlation between phase and amplitude
-        # In a real RIS, this would be more complex (e.g., Modulation Index)
-        pac_score = np.corrcoef(phase, amplitude_envelope)[0, 1]
+        if np.std(ordered_signal) == 0:
+            pac_score = 0.0
+        else:
+            analytic_signal = hilbert(ordered_signal)
+            amplitude_envelope = np.abs(analytic_signal)
+            phase = np.angle(analytic_signal)
+            
+            if np.std(amplitude_envelope) == 0 or np.std(phase) == 0:
+                pac_score = 0.0
+            else:
+                corr = np.corrcoef(phase, amplitude_envelope)
+                pac_score = corr[0, 1]
+                if np.isnan(pac_score):
+                    pac_score = 0.0
         
         is_resonant = np.abs(pac_score) > 0.1 # Arbitrary threshold for non-randomness
         

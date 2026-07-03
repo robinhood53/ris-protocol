@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+
 import numpy as np
 from astropy.coordinates import EarthLocation, AltAz, get_sun, SkyCoord
 from astropy.time import Time
