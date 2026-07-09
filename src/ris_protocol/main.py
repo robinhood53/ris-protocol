@@ -1,9 +1,9 @@
-from core import PhaseRotationalEncoder
-from analysis import MHSFilter
-from attention import ResonantAttention
-from recursive import PhaseSlipIntegrator
-from ingestion import MelbourneProtocol
-from scheduler import SolarMidnightScheduler
+from .core import PhaseRotationalEncoder
+from .analysis import MHSFilter
+from .attention import ResonantAttention
+from .recursive import PhaseSlipIntegrator
+from .ingestion import MelbourneProtocol
+from .scheduler import SolarMidnightScheduler
 import numpy as np
 
 def run_ris_protocol():

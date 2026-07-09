@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ris_protocol"
+version = "0.1.0"
+description = "Resonance Interference Simulation (RIS) Protocol - Trappist-1 Anomaly"
+authors = [{ name = "Rafael Thorne (Stargazer Project)" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "astropy",
+    "lightkurve",
+    "ipywidgets"
+]
+
+[project.scripts]
+ris-simulate = "ris_protocol.simulation:run_constructive_interference_simulation"
+ris-main = "ris_protocol.main:run_ris_protocol"

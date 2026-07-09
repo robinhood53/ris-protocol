@@ -1,9 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from core import PhaseRotationalEncoder
-from attention import ResonantAttention
-from analysis import MHSFilter
-
+from .core import PhaseRotationalEncoder
+from .attention import ResonantAttention
+from .analysis import MHSFilter
 def run_constructive_interference_simulation():
     print("--- RIS Protocol: Constructive Interference Simulation ---")
     

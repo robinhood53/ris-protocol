@@ -6,9 +6,9 @@ from astropy.coordinates import EarthLocation, AltAz, get_sun, SkyCoord
 from astropy.time import Time
 import astropy.units as u
 import lightkurve as lk
-from core import PhaseRotationalEncoder
-from analysis import MHSFilter
-from attention import ResonantAttention
+from .core import PhaseRotationalEncoder
+from .analysis import MHSFilter
+from .attention import ResonantAttention
 import datetime
 
 class MelbourneRefractoryProtocol:
