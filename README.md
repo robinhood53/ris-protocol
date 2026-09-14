@@ -59,13 +59,22 @@ Alternatively, run it locally:
 jupyter notebook notebooks/ris_protocol_explainer.ipynb
 ```
 
-Additionally, to explore the Neuromorphic-TAME biological repair algorithm for deep space architecture, launch the simulation notebook:
+Additionally, to explore the Neuromorphic-TAME biological repair algorithm for deep space architecture (routing around a dead zone), launch the grid simulation notebook:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/robinhood53/ris-protocol/blob/main/notebooks/Neuromorphic_TAME_Simulation.ipynb)
 
 Alternatively, run it locally:
 ```bash
 jupyter notebook notebooks/Neuromorphic_TAME_Simulation.ipynb
+```
+
+Finally, to see the Oxygen Life Support Homeostasis recovery chart (from the original post), launch the TAME Healing Chart notebook:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/robinhood53/ris-protocol/blob/main/notebooks/tame_healing_chart.ipynb)
+
+Alternatively, run it locally:
+```bash
+jupyter notebook notebooks/tame_healing_chart.ipynb
 ```
 
 ## Running the Core Protocol
