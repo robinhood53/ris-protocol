@@ -50,12 +50,20 @@ pip install -e .
 ```
 
 ## Exploring the Science (Jupyter Notebooks)
-To dive into the mathematics, narrative context, and interactive simulations behind the TRAPPIST-1 anomaly, run the explainer notebook:
+To dive into the mathematics, narrative context, and interactive simulations behind the TRAPPIST-1 anomaly, you can launch the explainer notebook directly in your browser:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/robinhood53/ris-protocol/blob/main/notebooks/ris_protocol_explainer.ipynb)
+
+Alternatively, run it locally:
 ```bash
 jupyter notebook notebooks/ris_protocol_explainer.ipynb
 ```
 
-Additionally, to explore the Neuromorphic-TAME biological repair algorithm for deep space architecture, run the simulation notebook:
+Additionally, to explore the Neuromorphic-TAME biological repair algorithm for deep space architecture, launch the simulation notebook:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/robinhood53/ris-protocol/blob/main/notebooks/Neuromorphic_TAME_Simulation.ipynb)
+
+Alternatively, run it locally:
 ```bash
 jupyter notebook notebooks/Neuromorphic_TAME_Simulation.ipynb
 ```
