@@ -49,10 +49,15 @@ cd ris-protocol
 pip install -e .
 ```
 
-## Exploring the Science (Jupyter Notebook)
+## Exploring the Science (Jupyter Notebooks)
 To dive into the mathematics, narrative context, and interactive simulations behind the TRAPPIST-1 anomaly, run the explainer notebook:
 ```bash
 jupyter notebook notebooks/ris_protocol_explainer.ipynb
+```
+
+Additionally, to explore the Neuromorphic-TAME biological repair algorithm for deep space architecture, run the simulation notebook:
+```bash
+jupyter notebook notebooks/Neuromorphic_TAME_Simulation.ipynb
 ```
 
 ## Running the Core Protocol
